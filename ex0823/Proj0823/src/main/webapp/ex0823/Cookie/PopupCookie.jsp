@@ -9,7 +9,7 @@ if (chkVal != null && chkVal.equals("1")) {
 	cookie.setPath(request.getContextPath());
 	cookie.setMaxAge(60+60*24);
 	response.addCookie(cookie);
-	out.printin("쿠키 : 하루 동안 열지 않음");
+	out.println("쿠키 : 하루 동안 열지 않음");
 }
 %>    
 <!DOCTYPE html>

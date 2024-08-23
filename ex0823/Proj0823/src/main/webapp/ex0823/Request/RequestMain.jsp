@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
     <%
     request.setAttribute("requestString", "request 영역의 문자열");
-    request.setAttribute("requestPerson", new person("안중근", 31));
+    request.setAttribute("requestPerson", new Person("안중근", 31));
     %>
 <!DOCTYPE html>
 <html>

@@ -3,9 +3,9 @@
     pageEncoding="UTF-8"%>
     
     <%
-    PageContext.setAttribute("pageInteger", 1000);
-    PageContext.setAttribute("pageString", "페이지 영역의 문자열");
-    PageContext.setAttribute("pagePerson", new Person("한석봉", 99));
+    pageContext.setAttribute("pageInteger", 1000);
+    pageContext.setAttribute("pageString", "페이지 영역의 문자열");
+    pageContext.setAttribute("pagePerson", new Person("한석봉", 99));
     %>
 <!DOCTYPE html>
 <html>
