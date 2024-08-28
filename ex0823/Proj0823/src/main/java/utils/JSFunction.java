@@ -3,16 +3,28 @@ package utils;
 import jakarta.servlet.jsp.JspWriter;
 
 public class JSFunction {
-
-	public static void alertBack(String msg, String url, JspWriter out) {
+	
+	public static void alertLocation(String msg, String url, JspWriter out) {
 		try {
-			String sc = " "
+			String script = "" 
 					      + "<script>"
 					      + "   alert('" + msg + "');"
 					      + "   location.href='" + url + "';"
+					      + "</script>";
+			out.println(script);
+		}
+		catch (Exception e) {}
+	}
+
+	public static void alertBack(String msg, JspWriter out) {
+		try {
+			String script = " "
+					      + "<script>"
+					      + "   alert('" + msg + "');"
+					      + "   history.back();"
 					      + "<script>";
 			System.out.println();
-			out.println(sc);
+			out.println(script);
 			
 		}
 		catch (Exception e) {}
