@@ -9,18 +9,25 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
+  <servlet>
+   <servlet-name>helloServlet</servlet-name>
+   <servlet-class>servlet.helloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>helloServlet</servlet-name>
+   <url-pattern>/12Servlet/HelloServlet.do</url-pattern>
+  </servlet-mapping>
   <context-param>
   <param-name>OracleDriver</param-name>
   <param-value>oracle.jdbc.OracleDriver</param-value>
   </context-param>
   <context-param>
   <param-name>OracleURL</param-name>
-  <param-value>JDBC:oracle:thin:@localhost:1521:XE</param-value>
+  <param-value>jdbc:oracle:thin:@localhost:1521:orcl21v</param-value>
   </context-param>
   <context-param>
   <param-name>OracleId</param-name>
-  <param-value>MUSTHAVE</param-value>
+  <param-value>tim</param-value>
   </context-param>
   <context-param>
   <param-name>OraclePwd</param-name>
